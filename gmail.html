@@ -1,25 +1,26 @@
 <html>
     <head>
         <title> Gmail </title>
-        <link rel="stylesheet" href="\Task\Gmail\Style\gmail.css"/>
-        <link rel="stylesheet" href="\Task\Gmail\Style\style.css" />
-        <link rel="stylesheet" href="Task/Gmail/Style/gmail.css">
-        <link rel="stylesheet" href="Task/Gmail/Style/style.css">
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style/gmailCss.css">
+        <link rel="stylesheet" href="Style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <nav>
-            <div class="nav-left">
+
+        <nav class="row w-100 d-flex container-fluid pe-0">
+            <div class="col-2 d-md-flex d-none nav-left">
                 <div class="nav-menu-icon">
                     <div class="nav-menu">
                         <span class="material-symbols-outlined menu-icon"> menu </span>
                     </div>
                 </div>
                 <div class="nav-logo">
-                    <img class="nav-logo-img"
-                        src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png">
+                    <img class="nav-logo-img" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png">
                 </div>
             </div>
-            <div class="nav-middle">
+            <div class="col-12 col-md-6 me-auto ms-auto nav-middle">
                 <div class="input-wrapper">
                     <div class="icon-box search-icon-box">
                         <div class="svg">
@@ -31,13 +32,14 @@
                     </div>
                     <div class=" tune-icon">
                         <div class="svg">
-                            <span class="material-symbols-outlined menu-icon">tune</span>
+                            <span class="material-symbols-outlined menu-icon d-none d-md-flex">tune</span>
+                            <img class="d-flex d-md-none menu-img" src="https://lh3.googleusercontent.com/a/ACg8ocJohjdnBmQJgjkhXr-_ou9UwtnuRYphAmsJadW0Awpivv8Y5JVL=s288-c-no">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="nav-right">
-                <div class="icon-box que-icon-box">
+            <div class="col-md-3 nav-right d-md-flex d-none">
+                <div class="icon-box que-icon-box ms-md-5 ms-lg-auto">
                     <span class="material-symbols-outlined que-icon">help</span>
                 </div>
                 <div class="icon-box settings-icon-box">
@@ -49,14 +51,49 @@
                 <div class="img-wrapper">
                     <div class="img-container">
                         <div class="img-box">
-                            <img
-                                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+                            <img src="https://lh3.googleusercontent.com/a/ACg8ocJohjdnBmQJgjkhXr-_ou9UwtnuRYphAmsJadW0Awpivv8Y5JVL=s288-c-no">
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <section class="v-nav">
+
+
+        <div class="primary-small-box d-flex d-md-none">
+            <p class="primary-small">Primary</p>
+        </div>
+
+
+        <div class="message-wrapper container-fluid d-sm-flex d-md-none">
+
+        <div class="message-check-container">
+            <div class="message-img-box">
+                <img class="message-img" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS6_UCWMkR_qrlIP2aZDP9F5tC708WY8VUWw&s">
+            </div>
+        </div>
+
+        <div class="message-title d-block">
+                <div class="message-title-box">
+                    <p class="message-title">LinkedIn Job Alerts</p>
+                </div>
+                <div class="message-box container-fluid p-0 message-small">
+                     “frontend developer”: L&T Technology Services - Frontend Developer and more <span class=" d-none d-sm-flex">  - L&T Technology Services Frontend Developer:H
+                </div>
+            </div>
+  
+            <div class="time-star d-block ms-auto">
+                <div class="message-time-box ms-auto mb-auto">
+                    <p class="message-time">Jun 6</p>
+                </div>
+                <div class="message-star-container ">
+                    <div class="message-star-icon-box">
+                        <span class="material-symbols-outlined message-star-icon"> star </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="v-nav d-none d-md-block">
             <div class="edit-icon-container">
                 <div class="edit-icon-align">
                     <div class="edit-icon-box">
@@ -121,10 +158,8 @@
                 </div>
             </div>
         </section>
-
-
-        <section class="content">
-            <div class="content-icons-wrapper">
+        <section class="content d-none d-md-block">
+            <div class="content-icons-wrapper d-none d-md-flex">
                 <div class="content-icons-container">
                     <div class="content-icons-box">
                         <div class="left-content-icons">
@@ -188,59 +223,54 @@
                     </div>
                 </div>
             </div>
-            <div class="content-header-wrapper">
-            <div class="primary-content-box">
-                <div class="primary-icon-box">
-                    <span class="material-symbols-outlined primary-icon"> inbox </span>
+            <div class="content-header-wrapper d-none d-md-flex">
+                <div class="primary-content-box">
+                    <div class="primary-icon-box d-none d-md-flex">
+                        <span class="material-symbols-outlined primary-icon"> inbox </span>
+                    </div>
+                    <div class="primary-box">
+                        <p class="primary">Primary</p>
+                    </div>
                 </div>
-                <div class="primary-box">
-                    <p class="primary">Primary</p>
+                <div class="promotions-content-box content-header-align d-none d-md-flex">
+                    <div class="promotions-icon-box">
+                        <span class="material-symbols-outlined promotions-icon"> sell </span>
+                    </div>
+                    <div class="promotions-box">
+                        <p class="">Promotions</p>
+                    </div>
+                </div>
+                <div class="social-content-box content-header-align d-none d-md-flex">
+                    <div class="social-icon-box">
+                        <span class="material-symbols-outlined social-icon"> group </span>
+                    </div>
+                    <div class="social-box">
+                        <p class="">Social</p>
+                    </div>
                 </div>
             </div>
-            <div class="promotions-content-box content-header-align">
-                <div class="promotions-icon-box">
-                    <span class="material-symbols-outlined promotions-icon"> sell </span>
-                </div>
-                <div class="promotions-box">
-                    <p class="">Promotions</p>
-                </div>
-            </div>
-            <div class="social-content-box content-header-align">
-                <div class="social-icon-box">
-                    <span class="material-symbols-outlined social-icon"> group </span>
-                </div>
-                <div class="social-box">
-                    <p class="">Social</p>
-                </div>
-            </div>
-            </div>
-
-            <div class="message-wrapper">
+            <div class="message-wrapper container-fluid d-sm-flex">
                 <div class="message-check-container">
                     <div class="message-check-box">
                         <span class="material-symbols-outlined message-check-icon">check_box_outline_blank</span>
                     </div>
                 </div>
-
                 <div class="message-star-container">
                     <div class="message-star-icon-box">
                         <span class="material-symbols-outlined message-star-icon"> star </span>
                     </div>
                 </div>
-
                 <div class="message-title-box">
                     <p class="message-title">LinkedIn Job Alerts</p>
                 </div>
-
-                <div class="message-box">
-                    <p class="message">“frontend developer”: L&T Technology Services - Frontend Developer and more <span>  - L&T Technology Services - Frontend Developer:H...</span></p>
+                <div class="message-box container-fluid">
+                    <p class="message">“frontend developer”: L&T Technology Services - Frontend Developer and more <span>  - L&T Technology Services Frontend Developer:H...</span></p>
                 </div>
-
                 <div class="message-time-box">
-                    <p class="message-time">12:20PM</p>
+                    <p class="message-time">Jun 6</p>
                 </div>
-
             </div>
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
